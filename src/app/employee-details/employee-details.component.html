@@ -1,0 +1,15 @@
+
+<app-banner></app-banner>
+
+<div class="kk">
+<div *ngFor="let x of employ" class="emp">
+
+<p-card  [style]="{'width': '25rem'}">
+    <P><B>Employee ID : </B>{{x.id}}</P>
+    <P><B>Employee Name : </B>{{x.empName | uppercase}}</P>
+    <P><B>Employee Designation : </B>{{x.designation | uppercase}}</P>
+    <P><B>Employee Location : </B>{{x.location | uppercase}}</P>
+</p-card>
+</div>
+</div>
+
